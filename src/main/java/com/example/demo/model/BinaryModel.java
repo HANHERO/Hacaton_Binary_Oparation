@@ -40,20 +40,20 @@ public class BinaryModel {
    }
 
    private BigDecimal plus(BigDecimal firstValue, BigDecimal secondValue) {
-      return firstValue.add(secondValue, MathContext.DECIMAL128);
+      return firstValue.add(secondValue, MathContext.DECIMAL64);
    }
 
    private BigDecimal minus(BigDecimal firstValue, BigDecimal secondValue) {
-      return firstValue.subtract(secondValue, MathContext.DECIMAL128);
+      return firstValue.subtract(secondValue, MathContext.DECIMAL64);
    }
 
    private BigDecimal multiply(BigDecimal firstValue, BigDecimal secondValue) {
-      return firstValue.multiply(secondValue, MathContext.DECIMAL128);
+      return firstValue.multiply(secondValue, MathContext.DECIMAL64);
    }
 
    private BigDecimal divide(BigDecimal firstValue, BigDecimal secondValue) throws DivisionByZeroException {
       if (!secondValue.equals(BigDecimal.ZERO)) {
-         return firstValue.divide(secondValue, MathContext.DECIMAL128);
+         return firstValue.divide(secondValue, MathContext.DECIMAL64);
       } else {
          throw new DivisionByZeroException();
       }

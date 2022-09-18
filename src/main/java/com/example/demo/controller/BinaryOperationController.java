@@ -4,10 +4,7 @@ import com.example.demo.model.BinaryModel;
 import com.example.demo.model.DivisionByZeroException;
 import com.example.demo.model.MathOperation;
 import lombok.AllArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/binary")
